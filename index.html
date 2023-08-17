@@ -79,7 +79,7 @@
     <div class="col">
      <nav id="imm8g" class="navbar navbar-expand-lg navbar-light border">
       <div class="container-fluid">
-       <a page="page://BBEqzsvw9aMGQFnhZX" name="Page 3" slug="page-3" href="//figma-shopiana-webbuilder-production.vercel.app/page-3.html" link-type="page" id="i08fl" class="navbar-brand">Navbar</a><a page="page://BBEqzsvw9aMGQFnhZX" name="Page 3" slug="page-3" href="page://BBEqzsvw9aMGQFnhZX" link-type="url" id="ige9f">Link</a>
+       <a url="ghgjh" href="//figma-shopiana-webbuilder-production.vercel.app/.html" link-type="page" id="i08fl" class="navbar-brand">Navbar</a><a page="page://lAvgyRJVpvP8hEOyGIW" name="Pagefour" slug="pagefour" href="page://lAvgyRJVpvP8hEOyGIW" link-type="url" id="ige9f">Link</a>
        <div id="toggle-b7f48122-9814-4c57-b96b-280d0d1f38c1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-b7f48122-9814-4c57-b96b-280d0d1f38c1" aria-controls="collapse-b7f48122-9814-4c57-b96b-280d0d1f38c1" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
         <span class="navbar-toggler-icon"></span>
        </div>
@@ -88,6 +88,74 @@
     </div>
    </div>
   </div>
+  <div class="container">
+   <div class="row p-2 row-cols-1 row-cols-sm-2 row-cols-md-1">
+    <div class="col">
+     <form id="iwbpb">
+      <div class="mb-3" id="ijjrf">
+       <label for="exampleInputEmail1" class="form-label" id="is139">Email address</label><input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" name="exampleInputEmail1" class="form-control">
+       <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+       </div>
+      </div>
+      <div class="mb-3">
+       <label for="exampleInputPassword1" class="form-label" id="ildd6">Password</label><input type="password" id="exampleInputPassword1" name="exampleInputPassword1" class="form-control">
+      </div><label id="ikeik" for="file">file</label><input type="file" id="myFile" name="file">
+      <div class="mb-3 form-check">
+       <input type="checkbox" id="exampleCheck1" class="form-check-input"><label for="exampleCheck1" class="form-check-label">Check me out</label>
+      </div><button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <script>var props = {"iwbpb":{"name":"","target":"_self","method":"POST","url":"https://stgapi.shopiana.in/api/v1/wbWebsite/362/form/formData?store=figma23081404","emailenable":false}};
+          var ids = Object.keys(props).map(function(id) { return '#'+id }).join(',');
+          var els = document.querySelectorAll(ids);
+          for (var i = 0, len = els.length; i < len; i++) {
+            var el = els[i];
+            (function ({ name, target, method, url, emailenable }) {
+        // const submitButton = this.querySelector('[type=submit]'); // Find the submit button
+        if (name) {
+            const form = this;
+            this.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent the default form submission
+                // Create a new FormData object
+                const formData = new FormData(form);
+                formData.append('emailEnabled', emailenable);
+                formData.append('formName', name);
+                // Perform an API call using fetch and Promises
+                fetch(url, {
+                    method: method,
+                    // headers: {
+                    //     'Content-Type': 'application/json',
+                    // },
+                    body: formData,
+                })
+                    .then(response => {
+                    if (response.ok) {
+                        // API call successful
+                        return response.json();
+                    }
+                    else {
+                        // API call failed
+                        throw new Error('API call failed');
+                    }
+                })
+                    .then(responseData => {
+                    console.log('API response:', responseData);
+                    // Your custom script logic here
+                })
+                    .catch(error => {
+                    console.error('Error during API call:', error);
+                });
+            });
+            // }
+        }
+        else {
+            console.log('somthing went wrong');
+        }
+    }.bind(el))(props[el.id]);
+          }</script>
  </body>
 </html>
 </html>
