@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}.shopiana-product-image-height{height:20rem;}.shopiana-bg-white{background-color:white;}#i16nuk{font-size:19px;font-weight:600;color:#6c3737;}#itvbvx{font-size:16px;color:#764848;}#iii5aa{font-size:18px;font-family:Helvetica, serif;margin:0px;padding:0px 5rem 0px 5rem;}#io77cd{font-size:30px;text-align:left;display:flex;}#ipfyso{color:black;}#i20hsg{background-color:rgba(0, 0, 0, 0.05);}#i327he{padding:10px;}#isfv61{background-color:rgba(0, 0, 0, 0.05);}
+* { box-sizing: border-box; } body {margin: 0;}.shopiana-product-image-height{height:20rem;}.shopiana-bg-white{background-color:white;}#i16nuk{font-size:19px;font-weight:600;color:#6c3737;}#itvbvx{font-size:16px;color:#764848;}#iii5aa{font-size:18px;font-family:Helvetica, serif;margin:0px;padding:0px 5rem 0px 5rem;}#io77cd{font-size:30px;text-align:left;display:flex;}#ipfyso{color:black;}#i20hsg{background-color:rgba(0, 0, 0, 0.05);}#i327he{padding:10px;}#isfv61{background-color:rgba(0, 0, 0, 0.05);}#iqyb7k{background-color:rgba(0, 0, 0, 0.05);}@media only screen and (max-width: 992px){.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -85,19 +85,19 @@
   <div id="ipsc63" class="px-4 py-2 container-fluid">
    <div id="i8pyuf" class="row p-2">
     <div id="ie1aqd" class="col-sm-8 col-12">
-     <div id="io9pkp">
+     <div data-gjs-type="product-img" id="io9pkp">
       <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" id="impo6j" class="w-100 object-fit-cover shopiana-product-image-height">
      </div>
     </div>
     <div id="imw69p" class="col-sm-4 col-12">
      <div id="i3j3ij" class="row flex-column row-cols-md-2">
       <div id="igvz1v" class="col-12">
-       <div id="i16nuk">
+       <div data-gjs-type="product-name" id="i16nuk">
         <p class="text-truncate px-3">{product.name}</p>
        </div>
       </div>
       <div id="ix2qat" class="col-12">
-       <div id="itvbvx" class="d-flex justify-content-cente">
+       <div data-gjs-type="product-price" id="itvbvx" class="d-flex justify-content-cente">
         <p class="text-truncate px-3 mb-3">{product.price}</p>
        </div>
       </div>
@@ -112,8 +112,8 @@
    Product Description
   </div>
   <hr id="ivtmvt">
-  <div id="iii5aa" class="text-secondary">
-   <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+  <div data-gjs-type="product-description" id="iii5aa" class="text-secondary">
+   <p data-gjs-type="product-description" class="px-3">{product.description}</p>
   </div>
   <hr id="i2a5p3">
   <div id="ijy7hj" class="px-4 py-2">
@@ -225,7 +225,7 @@
        </div><!-- Grid row -->
       </div>
      </section><!-- Section: Links  --><!-- Copyright -->
-     <div class="text-center p-4">
+     <div id="iqyb7k" class="text-center p-4">
       © 2021 Copyright: 
       <div href="https://mdbootstrap.com/" class="text-reset fw-bold">
        Shopiana.com
@@ -239,112 +239,160 @@
       <div data-gjs-type="product-gird" id="ipmq7d" class="row">
        <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" id="igamun" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" id="itew9m" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" id="i9ej4k" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
        </div>
        <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
         <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
-         <div>
+         <div data-gjs-type="product-img">
           <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
          </div>
-         <div>
+         <div data-gjs-type="product-name">
           <p class="text-truncate px-3">{product.name}</p>
          </div>
-         <div class="text-secondary">
-          <p data-gjs-type="product-description" class="text-truncate px-3">{product.description}</p>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
          </div>
-         <div class="d-flex justify-content-cente">
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
+          <p class="text-truncate px-3 mb-3">{product.price}</p>
+         </div>
+        </div>
+       </div>
+       <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
+        <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
+         <div data-gjs-type="product-img">
+          <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
+         </div>
+         <div data-gjs-type="product-name">
+          <p class="text-truncate px-3">{product.name}</p>
+         </div>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
+         </div>
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
+          <p class="text-truncate px-3 mb-3">{product.price}</p>
+         </div>
+        </div>
+       </div>
+       <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
+        <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
+         <div data-gjs-type="product-img">
+          <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
+         </div>
+         <div data-gjs-type="product-name">
+          <p class="text-truncate px-3">{product.name}</p>
+         </div>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
+         </div>
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
+          <p class="text-truncate px-3 mb-3">{product.price}</p>
+         </div>
+        </div>
+       </div>
+       <div data-gjs-type="product-card" class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
+        <div data-gjs-type="prodcut-card" class="shadow pb-2 shopiana-bg-white">
+         <div data-gjs-type="product-img">
+          <img src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png" class="w-100 object-fit-cover shopiana-product-image-height">
+         </div>
+         <div data-gjs-type="product-name">
+          <p class="text-truncate px-3">{product.name}</p>
+         </div>
+         <div data-gjs-type="product-description" class="text-secondary">
+          <p data-gjs-type="product-description" class="px-3">{product.description}</p>
+         </div>
+         <div data-gjs-type="product-price" class="d-flex justify-content-cente">
           <p class="text-truncate px-3 mb-3">{product.price}</p>
          </div>
         </div>
